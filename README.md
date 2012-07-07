@@ -90,7 +90,7 @@ push to a feature branch, and open a pull request.
 
 ### How to run the tests
 
-`pip install requirements.txt` then `python tests.py`
+`pip install -r requirements.txt` then `python tests.py`
 
 ## (Un)license
 
