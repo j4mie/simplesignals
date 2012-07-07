@@ -34,9 +34,9 @@ class WorkerProcessBase(object):
 
     def init_signals(self):
         logger.debug("Initializing signal handlers")
-        signals.int(self.shutdown)
-        signals.quit(self.shutdown)
-        signals.term(self.shutdown)
+        signals.int(allow_interrupt=False)(self.shutdown)
+        signals.quit(allow_interrupt=False)(self.shutdown)
+        signals.term(allow_interrupt=False)(self.shutdown)
 
     def shutdown(self):
         logger.debug("Shutting down process")
