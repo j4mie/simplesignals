@@ -73,6 +73,10 @@ Please take a look at the source code to understand exactly what functionality `
 
 ## Changelog
 
+#### 0.2.0
+
+* Disallow interrupts in WorkerProcessBase signal handlers
+
 #### 0.1.0
 
 * Initial release.
