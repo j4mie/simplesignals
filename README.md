@@ -41,8 +41,6 @@ If you need the execution frame that would be handed to your function by the `si
         # do something with frame
         exit()
 
-Full documentation is available at [http://j4mie.github.com/rediset](http://j4mie.github.com/rediset).
-
 ### Worker processes
 
 One of the primary uses of Unix signals is to implement well-behaved worker processes. Process management tools such as [Circus](http://circus.io) use signals to communicate with your processes. If you can handle signals correctly, you can take the opportunity to gracefully shut down your process and avoid half-finished jobs, etc.
