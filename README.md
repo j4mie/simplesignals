@@ -41,6 +41,8 @@ If you need the execution frame that would be handed to your function by the `si
         # do something with frame
         exit()
 
+System call interrupt behaviour can be controlled with the `allow_interrupt` flag. See [the `signal` module docs](http://docs.python.org/library/signal.html#signal.siginterrupt) for details.
+
 ### Worker processes
 
 One of the primary uses of Unix signals is to implement well-behaved worker processes. Process management tools such as [Circus](http://circus.io) use signals to communicate with your processes. If you can handle signals correctly, you can take the opportunity to gracefully shut down your process and avoid half-finished jobs, etc.
