@@ -51,8 +51,10 @@ class Signal(object):
             handler = SignalHandler(func, takes_frame=takes_frame,
                                     takes_signal=takes_signal)
             signal.signal(int(self), handler)
+
             if hasattr(signal, 'siginterrupt'):  # python 2.6
                 signal.siginterrupt(int(self), allow_interrupt)
+
             return func
 
         # Make sure the decorator works with or without arguments
