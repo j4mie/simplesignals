@@ -45,6 +45,8 @@ class WorkerProcessBase(object):
     def run(self):
         logger.debug("Starting process")
 
+        self.startup()
+
         while self.alive:
             self.do_work()
 
@@ -54,6 +56,9 @@ class WorkerProcessBase(object):
 
     def do_work(self):
         raise NotImplementedError()
+
+    def startup(self):
+        pass
 
     def cleanup(self):
         pass

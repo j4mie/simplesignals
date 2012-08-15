@@ -75,6 +75,10 @@ Please take a look at the source code to understand exactly what functionality `
 
 ## Changelog
 
+#### 0.3.0
+
+* Add `startup` method to WorkerProcessBase
+
 #### 0.2.0
 
 * Disallow interrupts in WorkerProcessBase signal handlers
